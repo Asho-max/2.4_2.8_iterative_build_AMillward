@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Tawa College Yr10 EOTC</title>
+
+		<!-- Meta Tags -->
+		<meta charset="UTF-8" />
+		<meta name="Keywords" content="EOTC, Tawa College, Year 10" />
+		<meta name="Author" content="Ash Millward" />
+		<meta name="Description" content="A website to inform students and parents about EOTC at Tawa College" />
+		<meta name="viewport" content="width=device-width, inital-scale=1" />
+
+		<!-- Stylesheet -->
+		<link rel="stylesheet" href="style.css" />
+
+		<!-- Favicon -->
+		<link rel="icon" type="image/x-icon" href="Images/favicon.png" />
+
+		<!-- Fonts and Icons -->
+		<script src="https://kit.fontawesome.com/ccbd4d6bc1.js" crossorigin="anonymous"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Lato:weight@400;900&display=swap" rel="stylesheet" />
+		<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Source Sans 3' rel='stylesheet'>
+	</head>
+	<body>
+		<div class="grid-container">
+			<div class="nav">
+				<ul class="nav-list">
+					<li>Community Service</li>
+					<li>Rangituhi</li>
+					<li>Adrenaline Forest/Pool</li>
+					<li>Camp</li>
+					<li>Contact</li>
+				</ul>
+			</div>
+			<div class="header" id="header">
+
+			</div>
+			<div class="content">
+				<div class="carousel">
+					<h1 id="carousel-text">Image Carousel</h1>
+					<ul class="carousel-container">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="main-content">
+					<h1 style="position: absolute; left: 10px; top: 10px;">Main Content</h1>
+					<div class="main-grid-container">
+						<div id="main-1">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum erat arcu, 
+							interdum a enim eu, ultrices porta sem. Morbi dignissim lacinia orci ut euismod. 
+							Pellentesque accumsan enim nisi, sed sollicitudin risus fringilla vitae. 
+							Sed rhoncus facilisis sem sed egestas. Integer placerat nunc tellus. 
+							Sed pretium maximus semper. Etiam id felis a urna suscipit pharetra. 
+							Sed tempus neque est, et dignissim sapien varius a. Nam lectus tellus, 
+							porta vel elit non, vulputate cursus metus. Quisque volutpat aliquam ex, 
+							at efficitur metus venenatis ut. Suspendisse potenti. Integer sed est vel 
+							orci gravida fringilla dapibus non est.
+							Phasellus facilisis risus felis, ut accumsan erat vulputate eu. 
+							Donec ultrices, ante vel placerat vestibulum, sem felis venenatis massa, 
+							feugiat tincidunt justo risus at magna. Suspendisse consectetur, 
+							massa non tincidunt auctor, ligula nibh tincidunt elit, ut eleifend augue 
+							dolor eget purus. Phasellus dapibus dolor nisl, quis euismod dui ultricies quis. 
+							Vivamus facilisis orci eu nibh aliquet semper. Pellentesque fermentum turpis magna, 
+							in lacinia arcu pulvinar vel. Pellentesque in diam purus. Phasellus hendrerit 
+							risus tortor, vitae dapibus orci faucibus non. Morbi mattis sit amet lacus eu posuere.
+						</div>
+						<div id="main-2">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum erat arcu, 
+							interdum a enim eu, ultrices porta sem. Morbi dignissim lacinia orci ut euismod. 
+							Pellentesque accumsan enim nisi, sed sollicitudin risus fringilla vitae. 
+							Sed rhoncus facilisis sem sed egestas. Integer placerat nunc tellus. 
+							Sed pretium maximus semper. Etiam id felis a urna suscipit pharetra. 
+							Sed tempus neque est, et dignissim sapien varius a. Nam lectus tellus, 
+							porta vel elit non, vulputate cursus metus. Quisque volutpat aliquam ex, 
+							at efficitur metus venenatis ut. Suspendisse potenti. Integer sed est vel 
+							orci gravida fringilla dapibus non est.
+							Phasellus facilisis risus felis, ut accumsan erat vulputate eu. 
+							Donec ultrices, ante vel placerat vestibulum, sem felis venenatis massa, 
+							feugiat tincidunt justo risus at magna. Suspendisse consectetur, 
+							massa non tincidunt auctor, ligula nibh tincidunt elit, ut eleifend augue 
+							dolor eget purus. Phasellus dapibus dolor nisl, quis euismod dui ultricies quis. 
+							Vivamus facilisis orci eu nibh aliquet semper. Pellentesque fermentum turpis magna, 
+							in lacinia arcu pulvinar vel. Pellentesque in diam purus. Phasellus hendrerit 
+							risus tortor, vitae dapibus orci faucibus non. Morbi mattis sit amet lacus eu posuere.
+							Nunc gravida augue nec lacus sagittis, id efficitur dolor aliquet. Etiam erat elit, 
+							suscipit vitae felis vitae, ullamcorper porta augue. Integer vel ante sollicitudin, 
+							elementum risus a, posuere dolor. Morbi iaculis, massa nec suscipit venenatis, dolor 
+							massa tristique odio, eget porttitor dolor leo non ante. Sed tortor lacus, ullamcorper
+							et neque a, sagittis mollis felis. Morbi ac convallis nisl. Donec sit amet nisl eget 
+							nulla iaculis elementum. Cras at commodo dui, at faucibus nisi. Praesent varius 
+							convallis malesuada. Aliquam pretium tortor vitae nulla viverra, sit amet varius enim
+							semper. Vestibulum dictum commodo massa, sit amet tincidunt erat maximus eget. 
+							Nullam sed consectetur ex, non porttitor est. In vulputate commodo magna in ornare. 
+						</div>
+						<div id="main-3">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum erat arcu, 
+							interdum a enim eu, ultrices porta sem. Morbi dignissim lacinia orci ut euismod. 
+							Pellentesque accumsan enim nisi, sed sollicitudin risus fringilla vitae. 
+							Sed rhoncus facilisis sem sed egestas. Integer placerat nunc tellus. 
+							Sed pretium maximus semper. Etiam id felis a urna suscipit pharetra. 
+							Sed tempus neque est, et dignissim sapien varius a. Nam lectus tellus, 
+							porta vel elit non, vulputate cursus metus. Quisque volutpat aliquam ex, 
+							at efficitur metus venenatis ut. Suspendisse potenti. Integer sed est vel 
+							orci gravida fringilla dapibus non est.
+							Phasellus facilisis risus felis, ut accumsan erat vulputate eu. 
+							Donec ultrices, ante vel placerat vestibulum, sem felis venenatis massa, 
+							feugiat tincidunt justo risus at magna.
+						</div>
+						<div id="main-4">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum erat arcu, 
+							interdum a enim eu, ultrices porta sem. Morbi dignissim lacinia orci ut euismod. 
+							Pellentesque accumsan enim nisi, sed sollicitudin risus fringilla vitae. 
+							Sed rhoncus facilisis sem sed egestas. Integer placerat nunc tellus. 
+							Sed pretium maximus semper. Etiam id felis a urna suscipit pharetra. 
+							Sed tempus neque est, et dignissim sapien varius a. Nam lectus tellus, 
+							porta vel elit non, vulputate cursus metus. Quisque volutpat aliquam ex, 
+							at efficitur metus venenatis ut. Suspendisse potenti. Integer sed est vel 
+							orci gravida fringilla dapibus non est.
+							Phasellus facilisis risus felis, ut accumsan erat vulputate eu. 
+							Donec ultrices, ante vel placerat vestibulum, sem felis venenatis massa, 
+							feugiat tincidunt justo risus at magna.
+						</div>
+						<div id="main-5">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum erat arcu, 
+							interdum a enim eu, ultrices porta sem. Morbi dignissim lacinia orci ut euismod. 
+							Pellentesque accumsan enim nisi, sed sollicitudin risus fringilla vitae. 
+							Sed rhoncus facilisis sem sed egestas. Integer placerat nunc tellus. 
+							Sed pretium maximus semper. Etiam id felis a urna suscipit pharetra. 
+							Sed tempus neque est, et dignissim sapien varius a. Nam lectus tellus, 
+							porta vel elit non, vulputate cursus metus. Quisque volutpat aliquam ex, 
+							at efficitur metus venenatis ut. Suspendisse potenti. Integer sed est vel 
+							orci gravida fringilla dapibus non est.
+							Phasellus facilisis risus felis, ut accumsan erat vulputate eu. 
+							Donec ultrices, ante vel placerat vestibulum, sem felis venenatis massa, 
+							feugiat tincidunt justo risus at magna. Suspendisse consectetur, 
+							massa non tincidunt auctor, ligula nibh tincidunt elit, ut eleifend augue 
+							dolor eget purus. Phasellus dapibus dolor nisl, quis euismod dui ultricies quis. 
+							Vivamus facilisis orci eu nibh aliquet semper. Pellentesque fermentum turpis magna, 
+							in lacinia arcu pulvinar vel. Pellentesque in diam purus. Phasellus hendrerit 
+							risus tortor, vitae dapibus orci faucibus non. Morbi mattis sit amet lacus eu posuere.
+						</div>
+						<div id="main-6">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum erat arcu, 
+							interdum a enim eu, ultrices porta sem. Morbi dignissim lacinia orci ut euismod. 
+							Pellentesque accumsan enim nisi, sed sollicitudin risus fringilla vitae. 
+							Sed rhoncus facilisis sem sed egestas. Integer placerat nunc tellus. 
+							Sed pretium maximus semper. Etiam id felis a urna suscipit pharetra. 
+							Sed tempus neque est, et dignissim sapien varius a. Nam lectus tellus, 
+							porta vel elit non, vulputate cursus metus. Quisque volutpat aliquam ex, 
+							at efficitur metus venenatis ut. Suspendisse potenti. Integer sed est vel 
+							orci gravida fringilla dapibus non est.
+							Phasellus facilisis risus felis, ut accumsan erat vulputate eu. 
+							Donec ultrices, ante vel placerat vestibulum, sem felis venenatis massa, 
+							feugiat tincidunt justo risus at magna. Suspendisse consectetur, 
+							massa non tincidunt auctor, ligula nibh tincidunt elit, ut eleifend augue 
+							dolor eget purus. Phasellus dapibus dolor nisl, quis euismod dui ultricies quis. 
+							Vivamus facilisis orci eu nibh aliquet semper. Pellentesque fermentum turpis magna, 
+							in lacinia arcu pulvinar vel. Pellentesque in diam purus. Phasellus hendrerit 
+							risus tortor, vitae dapibus orci faucibus non. Morbi mattis sit amet lacus eu posuere.
+							Nunc gravida augue nec lacus sagittis, id efficitur dolor aliquet. Etiam erat elit, 
+							suscipit vitae felis vitae, ullamcorper porta augue. Integer vel ante sollicitudin, 
+							elementum risus a, posuere dolor. Morbi iaculis, massa nec suscipit venenatis, dolor 
+							massa tristique odio, eget porttitor dolor leo non ante. Sed tortor lacus, ullamcorper
+							et neque a, sagittis mollis felis. Morbi ac convallis nisl. Donec sit amet nisl eget 
+							nulla iaculis elementum. Cras at commodo dui, at faucibus nisi. Praesent varius 
+							convallis malesuada. Aliquam pretium tortor vitae nulla viverra, sit amet varius enim
+							semper. Vestibulum dictum commodo massa, sit amet tincidunt erat maximus eget. 
+							Nullam sed consectetur ex, non porttitor est. In vulputate commodo magna in ornare.
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<h1 id="carousel-text" style="color: black;">Footer</h1>
+			</div>
+		</div>
+	</body>
+	<script src="script.js"></script>
+</html>
+
