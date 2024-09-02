@@ -183,15 +183,64 @@ body {
 /* CAROUSEL STYLING */
 
 .carousel {
-	height: 600px;
-	width: 100%;
-	background-image: url('Images/carousel-bg-better.jpg');
-	background-size: cover;
-	display: flex;
-	align-items: center;
+    height: 600px;
+    width: 100%;
+    background-image: url('Images/carousel-bg-better.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-bg-blur {
+    width: 100%;
+    height: 65%;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.carousel-placeholder {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    outline: black solid 3px;
 	position: relative;
-	overflow: hidden;
-	z-index: 999;
+}
+
+.carousel-button-container {
+	width: 30%;
+	height: 80%;
+	position: relative;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+	width: 50px;
+	height: 50px;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 24px;
+    border-radius: 50%;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
 }
 
 .carousel-container {
@@ -219,23 +268,6 @@ body {
 	filter: drop-shadow(0px 0px 0px 8px black);
 }
 
-.carousel-bg-blur {
-	width: 100%;
-	height: 65%;
-	background-color: rgba(255, 255, 255, 0.2);
-	backdrop-filter: blur(2px);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.carousel-placeholder {
-	width: 30%;
-	height: 80%;
-	object-fit: cover;
-	border-radius: 15px;
-	outline: black solid 3px;
-}
 
 /* CONTENT STYLING */
 
@@ -251,7 +283,7 @@ body {
 /* Home page content styling*/
 
 .main-content {
-	height: auto;
+	min-height: 100vh;
 	background-color: white;
 	position: relative;
 	display: flex;
@@ -410,7 +442,60 @@ body {
 	bottom: 160%;
 }
 
-	
+
+/* Back to top button styling */
+
+.back-to-top {
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	/* margin-top: 15px; */
+	background-color: rgba(0, 0, 0, 0.05);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.5s;
+	position: fixed;
+	bottom: 20px;
+    right: 20px; 
+	display: none;
+	z-index: 999;
+}
+
+.back-to-top:hover {
+	background-color: rgba(0, 0, 0, 0.85);
+	cursor: pointer;
+	transform: translateY(-5px);
+}
+
+.back-to-top:hover > .left {
+	background-color: white;
+	transition: 0.5s;
+}
+
+.back-to-top:hover > .right {
+	background-color: white;
+	transition: 0.5s;
+}
+
+.left, .right {
+	width: 30px;
+	height: 5px;
+	background-color: black;
+	position: absolute;
+	transition: 0.5s;
+	bottom: 50%;
+}
+
+.left {
+	transform: rotateZ(-45deg) translateY(-3px);
+	left: 22%;
+}
+
+.right {
+	transform: rotateZ(45deg) translateY(-3px);
+	right: 22%;
+}	
 
 
 
@@ -444,6 +529,7 @@ body {
 	border-radius: 60px;
 }
 
+/* Code blocks like this are used to create each different division that you see on each page */
 #main-1-cs { height: 35vh; width: 24%; left: 18%; top: 15%; background-color: #989BE6; transform: rotateZ(-3.87deg); } 
 #main-2-cs { height: 50vh; width: 24%; left: 18%; top: 41%; background-color: #E0FFF0; transform: rotateZ(2.7deg); } 
 #main-3-cs { height: 45vh; width: 24%; right: 18%; top: 15%; background-color: #C7FFDA; transform: rotateZ(1.52deg); } 
@@ -498,7 +584,7 @@ body {
 
 /* camp styling */
 
-#main-1-wc, #main-2-wc, #main-3-wc, #main-4-wc {
+#main-1-wc, #main-2-wc, #main-3-wc, #main-4-wc, #main-5-wc {
 	background-color: green;
 	position: absolute;
 	padding-top: 20px;
@@ -508,9 +594,10 @@ body {
 }
 
 #main-1-wc { height: 110vh; width: 24%; left: 18%; top: 15%; background-color: #F1DCFE; transform: rotateZ(0.26deg); } 
-#main-2-wc { height: 30vh; width: 24%; left: 18%; top: 89%; background-color: #FFC2A0; transform: rotateZ(-3.21deg); display: none;} 
+#main-2-wc { height: 128vh; width: 24%; left: 18%; top: 79%; background-color: #FFC2A0; transform: rotateZ(-1.21deg); display: none;} 
 #main-3-wc { height: 23vh; width: 24%; right: 18%; top: 15%; background-color: #A0CCFF; transform: rotateZ(-1.76deg); } 
 #main-4-wc { height: 77.5vh; width: 24%; right: 18%; top: 32.5%; background-color: #E1FEDC; transform: rotateZ(1.07deg); }
+#main-5-wc { height: 102vh; width: 24%; right: 18%; top: 91.5%; background-color: #FAEA82; transform: rotateZ(0.87deg); display: none;}
 
 .wc-overlay {
 	position: absolute;
@@ -527,6 +614,8 @@ body {
 #ov-2 {
 	background-image: linear-gradient(0deg, #E1FEDC, transparent);
 }
+
+/* This code is for the expandable/collapsing text button on the camp page */
 
 .btn-container {
 	width: 50%;
@@ -547,6 +636,7 @@ body {
 	margin-left: 50px;
 	z-index: 999;
 	transform: rotateZ(1.7deg);
+	transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .btn-banner-2 {
@@ -558,6 +648,7 @@ body {
 	margin-right: 50px;
 	z-index: 998;
 	transform: rotateZ(1.7deg);
+	transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .btn-header {
@@ -568,16 +659,46 @@ body {
 	bottom: 15px;
 	z-index: 999;
 	transform: rotateZ(1.7deg);
+	transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .btn-arrow {
 	position: absolute;
 	height: 75%;
 	top: 12.5%;
+	transition: transform 0.3s ease;
+}
+
+#accordionText {
+	display: none;
 }
 
 #btn-arrow-one { left: 50px; }
 #btn-arrow-two { right: 50px; }
+
+
+.btn-container:hover .btn-banner-1,
+.btn-container:hover .btn-banner-2,
+.btn-container:hover .btn-header {
+    transform: scale(1.05);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-container:hover .btn-banner-1 {
+    background-color: #FF13CB;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-container:hover .btn-banner-2 {
+    background-color: #FAFF09;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-container:hover .btn-arrow {
+    transform: translateY(30px);
+    transition: transform 0.3s ease;
+}
+
 
 /* contact styling */
 
@@ -653,6 +774,12 @@ body {
 	position: absolute;
 	width: 16%;
 	top: 205%;
+	transition: 300ms ease;
+}
+
+.contact-form:hover {
+	cursor: pointer;
+	transition: 300ms ease;
 }
 
 #main-1-contact {
@@ -682,6 +809,18 @@ body {
 	transform: rotateZ(-6.12deg);
 }
 
+#cf-one:hover {
+	transform: scale(1.1) rotateZ(3.6deg);
+}
+
+#cf-two:hover {
+	transform: scale(1.1) rotateZ(-4.8deg);
+}
+
+#cf-three:hover {
+	transform: scale(1.1) rotateZ(5.9deg);
+}
+
 
 
 /* FOOTER */
@@ -698,7 +837,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	z-index: 999;
+	z-index: 2;
 }
 
 .footer-overlay {
