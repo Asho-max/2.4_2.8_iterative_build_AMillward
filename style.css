@@ -15,6 +15,7 @@ body {
 	display: none;
 }
 
+
 /* GRID CONTAINER AND GRID SET-UP */
 
 .grid-container{
@@ -32,6 +33,7 @@ body {
 	background-color: #2F4BB1;
 	display: flex;
 	align-items: center;
+	position: relative;
 }
 
 /* Nav left section styling */
@@ -42,6 +44,7 @@ body {
 	/* background-color: pink; */
 	width: 475px;
 	height: 90px;
+	z-index: 2;
 }
 
 .nav-left-section li {
@@ -53,6 +56,14 @@ body {
 	left: 75px;
 	top: 15%;
 	position: absolute;
+	z-index: 99;
+	transition: 300ms ease;
+	transform: scale(1);
+}
+
+.nav-logo:hover {
+	transition: 300ms ease;
+	transform: scale(1.05);
 }
 
 .nav-header-text {
@@ -90,6 +101,7 @@ body {
 	display: flex;
 	align-items: center;
 	right: 3%;
+	z-index: 2;
 }
 
 .nav-list li {
@@ -105,6 +117,56 @@ body {
 .nav-list li a {
 	color: white;
 	text-decoration: none;
+	background-image: linear-gradient(90deg, yellow, yellow);
+	background-size: 0% 3px;
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	transition: 300ms ease;
+}
+
+.nav-list li a:hover {
+  color: yellow;
+  background-size: 100% 3px;
+}
+
+.home-link {
+	background-image: linear-gradient(90deg, yellow, yellow);
+	background-size: 0% 3px;
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	transition: 300ms ease;
+}
+
+.home-link:hover {
+  color: yellow;
+  background-size: 100% 3px;
+}
+
+.nav-bottom {
+	width: 100%;
+	height: 3%;
+	position: absolute;
+}
+
+#red {
+	background-color: #D7405C;
+	bottom: 2.5%;
+	left: 0;
+}
+
+#yellow {
+	background-color: #F7D542;
+	bottom: 8%;
+	left: 0;
+}
+
+.nav-bg-image {
+	background-image: url('Images/k4.png');
+	background-size: contain;
+	/* background-color: green; */
+	height: 65%;
+	width: 100%;
+	opacity: 0.4;
 }
 
 /* HEADER STYLING */
@@ -128,14 +190,8 @@ body {
 	display: flex;
 	align-items: center;
 	position: relative;
-	z-index: 1;
-}
-
-#carousel-text {
-	position: absolute;
-	top: 10px;
-	left: 10px;
-	color: white;
+	overflow: hidden;
+	z-index: 999;
 }
 
 .carousel-container {
@@ -183,6 +239,15 @@ body {
 
 /* CONTENT STYLING */
 
+.vector {
+	height: 135%;
+	z-index: 0;
+	position: absolute;
+	opacity: 0.35;
+	margin-left: 12.5%;
+	transform: translate(5%, -10%);
+}
+
 /* Home page content styling*/
 
 .main-content {
@@ -192,6 +257,7 @@ body {
 	display: flex;
 	justify-content: center;
 	z-index: 2;
+	overflow: hidden;
 }
 
 .main-grid-container {
@@ -291,6 +357,62 @@ body {
 .main-content-p a {
 	color: black;
 }
+
+.content-img-pos {
+	width: 100%;
+	height: 10%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.content-footer-img {
+	position: absolute;
+	opacity: 0.05;
+}
+
+#cfi-1 {
+	transform: rotateZ(-60.92deg);
+	height: 400%;
+	bottom: -100%;
+}
+
+#cfi-2 {
+	height: 200%; 
+	transform: rotateZ(-25.89deg); 
+	bottom: 133%;
+}
+
+#cfi-3 {
+	height: 230%; 
+	transform: rotateZ(-3.27deg); 
+	bottom: 280%;
+}
+
+#cfi-4 {
+	height: 140%; 
+	transform: rotateZ(-14.24deg); 
+	bottom: 75%;
+}
+
+#cfi-5 {
+	background-image: url('Images/kowhaiwhai-photoshop-3.png');
+	background-size: contain;
+	opacity: 0.05;
+	transform: translateY(35%);
+}
+
+#cfi-6 {
+	height: 150%;
+	transform: rotateZ(-52.45deg); 
+	bottom: 160%;
+}
+
+	
+
+
 
 /* Adjust grid item positioning */ 
 #main-1 { height: 40vh; width: 24%; left: 18%; top: 15%; background-color: #BBF3FF; transform: rotateZ(-0.2deg); } 
