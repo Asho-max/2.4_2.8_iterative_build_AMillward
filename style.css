@@ -2,6 +2,7 @@
 
 /* Importing Poppins (Font) */
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900@display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 
 body {
 	font-family: helvetica, arial, sans-serif;
@@ -16,32 +17,85 @@ body {
 
 /* GRID CONTAINER AND GRID SET-UP */
 
-.grid-container {
+.grid-container{
 	display: grid;
 	grid-template-columns: 100%;
-	grid-template-rows: 125px 775px 2900px 300px;
+	grid-template-rows: 125px 775px 2500px 400px;
 	height: 100vh;
+	position: relative;
 }
 
 /* NAVIGATION STYLING */
 
 .nav {
 	box-sizing: border-box;
-	background-color: navy;
+	background-color: #2F4BB1;
 	display: flex;
 	align-items: center;
 }
 
+/* Nav left section styling */
+
+.nav-left-section {
+	list-style-type: none;
+	position: absolute;
+	/* background-color: pink; */
+	width: 475px;
+	height: 90px;
+}
+
+.nav-left-section li {
+	display: inline-block;
+}
+
+.nav-logo {
+	width: 25%;
+	left: 75px;
+	top: 15%;
+	position: absolute;
+}
+
+.nav-header-text {
+	right: 65px;
+	bottom: 0%;
+	font-family: "Fredoka", sans-serif;
+	font-size: 2rem;
+	font-weight: 500;
+	position: absolute;
+	color: white;
+}
+
+.nav-separator {
+	position: absolute;
+	width: 3px;
+	height: 70px;
+	right: -3%;
+	top: 10px;
+	background-color: white;
+}
+
+
+/* Nav right section styling */
+
 .nav-list {
 	list-style-type: none;
+	position: absolute;
+	/* background-color: purple; */
+	height: 90px;
+	display: flex;
+	align-items: center;
+	right: 3%;
+	
 }
 
 .nav-list li {
 	display: inline-block;
 	color: white;
-	font-size: 3rem;
-	margin-left: 50px;
-	margin-right: 50px;
+	font-family: "Fredoka", sans-serif;
+	font-size: 1.75rem;
+	margin-left: 60px;
+	margin-right: 60px;
+	font-weight: 500;
 }
 
 /* HEADER STYLING */
@@ -51,9 +105,8 @@ body {
 	background-color: orange;
 	grid-column-start: 1;
 	grid-column-end: span 2;
-	background-image: url('Images/background.jpg');
 	background-size: cover;
-	background-position-y: 39%;
+	background-position-y: 50%;
 }
 
 /* CAROUSEL STYLING */
@@ -61,7 +114,8 @@ body {
 .carousel {
 	height: 600px;
 	width: 100%;
-	background-color: blue;
+	background-image: url('Images/carousel-bg-better.jpg');
+	background-size: cover;
 	display: flex;
 	align-items: center;
 	position: relative;
@@ -79,6 +133,12 @@ body {
 	white-space: nowrap;
 	position: absolute;
 	left: -335px;
+	z-index: 999;
+	height: 400px;
+	background-color: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(2px);
+	display: flex;
+	align-items: center;
 }
 
 .carousel-container li {
@@ -89,24 +149,68 @@ body {
 	display: inline-block;
 	margin-left: 37px;
 	margin-right: 37px;
+	background-size: cover;
+	filter: drop-shadow(0px 0px 0px 8px black);
+}
+
+.carousel-bg-blur {
+	width: 100%;
+	height: 65%;
+	background-color: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(2px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.carousel-placeholder {
+	width: 30%;
+	height: 80%;
+	object-fit: cover;
+	border-radius: 15px;
+	outline: black solid 3px;
 }
 
 /* CONTENT STYLING */
 
+/* Home page content styling*/
+
 .main-content {
-	height: 2400px;
-	background-color: pink;
+	height: 0px;
+	background-color: green;
 	position: relative;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	z-index: -1;
 }
 
 .main-grid-container {
 	width: 100%;
 	height: 1900px;
 	position: relative;
-	background-color: red;
+	top: 0px;
+}
+
+.content-banner {
+	position: absolute;
+	width: 800px;
+	height: 50px;
+	background-color: #FAFF09;
+	margin-left: 200px;
+	top: 140px;
+	z-index: 999;
+	transform: rotateZ(-1.95deg);
+}
+
+.main-content-header {
+	font-family: "Fredoka", sans-serif;
+	font-size: 4.5rem;
+	font-weight: 600;
+	position: absolute;
+	margin-left: 70px;
+	z-index: 999;
+	transform: rotateZ(-1.95deg);
+	top: 50px;
 }
 
 #main-1, #main-2, #main-3, #main-4, #main-5, #main-6 {
@@ -115,61 +219,376 @@ body {
 	padding-top: 20px;
 	padding-left: 20px;
 	max-width: 24%;
+	border-radius: 60px;
 }
 
-/* Adjust grid item positioning */
-#main-1 {
-	height: 40vh;
-	width: 24%;
-	left: 18%;
+.main-content-p {
+	font-family: "DM Sans", sans-serif;
+	font-size: 1.2rem;
+	font-weight: 400;
+	margin-left: 15px;
+	max-width: 420px;
+	margin-top: 30px;
+}
+
+.main-content-p a {
+	color: black;
+}
+
+/* Adjust grid item positioning */ 
+#main-1 { height: 40vh; width: 24%; left: 18%; top: 15%; background-color: #BBF3FF; transform: rotateZ(-0.2deg); } 
+#main-2 { height: 60vh; width: 24%; left: 18%; top: 41%; background-color: #FFC8A0; transform: rotateZ(2.1deg); } 
+#main-3 { height: 33vh; width: 24%; left: 18%; top: 76%; background-color: #B3FFA0; transform: rotateZ(0.65deg); } 
+#main-4 { height: 30vh; width: 24%; right: 18%; top: 15%; background-color: #FFDCF7; transform: rotateZ(1.88deg); } 
+#main-5 { height: 40vh; width: 24%; right: 18%; top: 35.5%; background-color: #C7FFDA; transform: rotateZ(-1.52deg); } 
+#main-6 { height: 60vh; width: 24%; right: 18%; top: 62%; background-color: #FFE0E0; transform: rotateZ(-0.43deg); }
+
+/* community service page content styling*/
+
+.content-banner-cs {
+	position: absolute;
+	width: 1200px;
+	height: 50px;
+	background-color: #FAFF09;
+	margin-left: 200px;
+	top: 140px;
+	z-index: 999;
+	transform: rotateZ(-1.95deg);
+}
+
+#main-1-cs, #main-2-cs, #main-3-cs, #main-4-cs, #main-5-cs, #main-6-cs {
+	background-color: green;
+	position: absolute;
+	padding-top: 20px;
+	padding-left: 20px;
+	max-width: 24%;
+	border-radius: 60px;
+}
+
+#main-1-cs { height: 35vh; width: 24%; left: 18%; top: 15%; background-color: #989BE6; transform: rotateZ(-3.87deg); } 
+#main-2-cs { height: 50vh; width: 24%; left: 18%; top: 41%; background-color: #E0FFF0; transform: rotateZ(2.7deg); } 
+#main-3-cs { height: 45vh; width: 24%; right: 18%; top: 15%; background-color: #C7FFDA; transform: rotateZ(1.52deg); } 
+#main-4-cs { height: 30vh; width: 24%; right: 18%; top: 46%; background-color: #FFC2A0; transform: rotateZ(-3.21deg); }
+
+.main-content-h2 {
+	font-family: "DM Sans", sans-serif;
+	font-size: 1.7rem;
+	font-weight: 800;
+	margin-left: 15px;
+	max-width: 420px;
+	margin-top: 30px;
+}
+
+.main-content-separator {
+	width: 85%;
+	margin-left: 12px;
+	height: 3px;
+	background-color: black;
+}
+
+/* rangituhi walk styling */
+
+#main-1-rw {
+	background-color: #D9FFF1;
+	position: absolute;
+	padding-top: 20px;
+	padding-left: 20px;
+	border-radius: 60px;
+	height: 35vh; 
+	width: 70%; 
+	left: 18%; 
 	top: 15%;
+	transform: rotateZ(1.27deg);
 }
 
-#main-2 {
-	height: 60vh;
-	width: 24%;
-	left: 18%;
-	top: 41%;
+/* adrenaline forest / te rauparaha arena styling (aftra as the acronym) */
+
+#main-1-aftra, #main-2-aftra, #main-3-aftra, #main-4-aftra {
+	background-color: green;
+	position: absolute;
+	padding-top: 20px;
+	padding-left: 20px;
+	max-width: 24%;
+	border-radius: 60px;
 }
 
-#main-3 {
-	height: 33vh;
-	width: 24%;
-	left: 18%;
-	top: 76%;
+#main-1-aftra { height: 80vh; width: 24%; left: 18%; top: 15%; background-color: #FDDCFE; transform: rotateZ(-0.85deg); } 
+#main-2-aftra { height: 30vh; width: 24%; left: 18%; top: 64%; background-color: #FFC2A0; transform: rotateZ(-3.21deg); } 
+#main-3-aftra { height: 40vh; width: 24%; right: 18%; top: 15%; background-color: #C7FFDA; transform: rotateZ(1.52deg); } 
+#main-4-aftra { height: 68vh; width: 24%; right: 18%; top: 43%; background-color: #FEECDC; transform: rotateZ(1.07deg); }
+
+/* camp styling */
+
+#main-1-wc, #main-2-wc, #main-3-wc, #main-4-wc {
+	background-color: green;
+	position: absolute;
+	padding-top: 20px;
+	padding-left: 20px;
+	max-width: 24%;
+	border-radius: 60px;
 }
 
-#main-4 {
-	height: 30vh;
-	width: 24%;
-	right: 18%;
-	top: 15%;
+#main-1-wc { height: 110vh; width: 24%; left: 18%; top: 15%; background-color: #FDDCFE; transform: rotateZ(0.26deg); } 
+#main-2-wc { height: 30vh; width: 24%; left: 18%; top: 89%; background-color: #FFC2A0; transform: rotateZ(-3.21deg); display: none;} 
+#main-3-wc { height: 23vh; width: 24%; right: 18%; top: 15%; background-color: #A0CCFF; transform: rotateZ(-1.76deg); } 
+#main-4-wc { height: 77.5vh; width: 24%; right: 18%; top: 32.5%; background-color: #E1FEDC; transform: rotateZ(1.07deg); }
+
+.wc-overlay {
+	position: absolute;
+	width: 90%;
+	height: 500px;
+	bottom: 100px;
+	left: 5%;
 }
 
-#main-5 {
-	height: 40vh;
-	width: 24%;
-	right: 18%;
-	top: 35.5%;
+#ov-1 {
+	background-image: linear-gradient(0deg, #FDDCFE, transparent);
 }
 
-#main-6 {
-	height: 60vh;
-	width: 24%;
-	right: 18%;
-	top: 62%;
+#ov-2 {
+	background-image: linear-gradient(0deg, #E1FEDC, transparent);
 }
+
+.btn-container {
+	width: 50%;
+	height: 10%;
+	position: absolute;
+	bottom: 150px;
+	left: 25%;
+	display: flex;
+	justify-content: center;
+}
+
+.btn-banner-1 {
+	position: absolute;
+	width: 500px;
+	height: 60px;
+	background-color: #FAFF09;
+	top: 30px;
+	margin-left: 50px;
+	z-index: 999;
+	transform: rotateZ(1.7deg);
+}
+
+.btn-banner-2 {
+	position: absolute;
+	width: 500px;
+	height: 60px;
+	background-color: #FF13CB;
+	top: 80px;
+	margin-right: 50px;
+	z-index: 998;
+	transform: rotateZ(1.7deg);
+}
+
+.btn-header {
+	font-family: "Fredoka", sans-serif;
+	font-size: 4.5rem;
+	font-weight: 600;
+	position: absolute;
+	bottom: 15px;
+	z-index: 999;
+	transform: rotateZ(1.7deg);
+}
+
+.btn-arrow {
+	position: absolute;
+	height: 75%;
+	top: 12.5%;
+}
+
+#btn-arrow-one { left: 50px; }
+#btn-arrow-two { right: 50px; }
+
+/* contact styling */
+
+.main-grid-container ul li {
+	font-family: "DM Sans", sans-serif;
+	font-size: 1.2rem;
+	font-weight: 400;
+	margin-left: 15px;
+	max-width: 420px;
+	margin-top: 12px;
+}
+
+.contact-logo-container {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 35%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact-logo {
+	position: absolute;
+	height: 40%;
+	z-index: 999;
+}
+
+.contact-bar-one {
+	height: 260px;
+	width: 35px;
+	background-color: rgba(255, 0, 245, 0.65);
+	transform: rotateZ(-16.13deg);
+}
+
+.contact-bar-two {
+	height: 260px;
+	width: 35px;
+	background-color: rgba(0, 240, 255, 0.65);
+	transform: rotateZ(-16.13deg);
+}
+
+.contact-bar-three {
+	height: 260px;
+	width: 35px;
+	background-color: rgba(255, 245, 0, 0.65);
+	transform: rotateZ(-16.13deg);
+}
+
+.main-contact-header {
+	font-family: "Fredoka", sans-serif;
+	font-size: 4.5rem;
+	font-weight: 600;
+	position: absolute;
+	margin-left: 70px;
+	z-index: 999;
+	transform: rotateZ(2.12deg);
+	top: 750px;
+}
+
+.content-banner-contact {
+	position: absolute;
+	width: 825px;
+	height: 50px;
+	background-color: #FAFF09;
+	top: 840px;
+	z-index: 999;
+	transform: rotateZ(2.12deg);
+}
+
+.contact-form {
+	position: absolute;
+	width: 16%;
+	top: 205%;
+}
+
+#cf-one {
+	transform: rotateZ(-1.96deg);
+}
+
+#cf-two {
+	left: 38%;
+	transform: rotateZ(6.71deg);
+}
+
+#cf-three {
+	left: 76%;
+	transform: rotateZ(-6.12deg);
+}
+
+
 
 /* FOOTER */
 
 .footer {
 	box-sizing: border-box;
-	grid-column-end: span 2;
-	background: lightblue;
+	/* grid-column-end: span 2; */
+	grid-row: 4; /* Ensure it's in the 4th row */
+    grid-column: 1 / -1; /* Span all columns if needed */
+	background-image: url('Images/rangituhi image2.jpg');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #AFCEE9;
+	opacity: 0.8;
+}
+
+.footer-section-one, .footer-section-two {
+	width: 40%;
+	height: 65%;
+	background-color: rgba(0, 84, 79, 0.5);
+	margin-left: 50px;
+	margin-right: 50px;
+	border-radius: 30px;
+	z-index: 999;
 	position: relative;
 }
 
+.footer-logo {
+	width: 90px;
+	margin-left: 40px;
+	margin-top: 40px;
+	z-index: 99999;
+	position: relative;
+}
 
+.footer-p {
+	font-family: "DM Sans", sans-serif;
+	font-size: 1.2rem;
+	font-weight: 400;
+	color: white;
+	position: absolute;
+	top: 20%;
+	left: 21%;
+}
 
+.footer-link {
+	font-family: "DM Sans", sans-serif;
+	font-size: 1.2rem;
+	font-weight: 400;
+	color: white;
+	position: absolute;
+	bottom: 17.5%;
+	left: 7%;
+	/* margin-right: 50px; */
+}
 
+.footer-header {
+	font-family: "DM Sans", sans-serif;
+	font-size: 2rem;
+	font-weight: 400;
+	color: white;
+	margin-left: 40px;
+	margin-top: 40px;
+}
 
+.footer-break {
+	width: 90%;
+	height: 2px;
+	background-color: white;
+	border: none;
+	position: absolute;
+	left: 5%;
+	top: 38%;
+}
+
+.footer-list {
+	list-style-type: none;
+}
+
+.footer-list li {
+	display: inline-block;
+}
+
+.footer i {
+	font-size: 3rem;
+	color: white;
+	margin-top: 70%;
+}
+
+.footer li:nth-child(2), .footer li:nth-child(3) {
+	margin-left: 50px;
+}
