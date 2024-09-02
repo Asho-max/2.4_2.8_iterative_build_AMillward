@@ -17,7 +17,7 @@
 		<link rel="icon" type="image/x-icon" href="Images/favicon.png" />
 
 		<!-- Fonts and Icons -->
-		<script src="https://kit.fontawesome.com/ccbd4d6bc1.js" crossorigin="anonymous"></script>
+		<script src="https://kit.fontawesome.com/a0bf71478d.js" crossorigin="anonymous"></script>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Lato:weight@400;900&display=swap" rel="stylesheet" />
@@ -30,6 +30,9 @@
 		<!-- Importing main fonts for use throughout my website development from Google Fonts -->
 		<link href='https://fonts.googleapis.com/css?family=Fredoka' rel='stylesheet'>
 		<link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+		
+		<!-- Favicon -->
+		<link rel="icon" type="image/x-icon" href="Images/eotc-favicon.ico" />
 	</head>
 	<body>
 		<div class="grid-container">
@@ -50,12 +53,13 @@
 				<div class="nav-bottom" id="red"></div>
 				<div class="nav-bottom" id="yellow"></div>
 			</div>
-			<div class="header" id="header" style="background-image: url('Images/background.jpg'); background-position-y: 39%;">
+			<div class="header" id="header" style="background-image: url('Images/background-3.jpg'); background-position-y: 39%;">
 
 			</div>
 			<div class="content">
 				<div class="carousel">
 					<ul class="carousel-container">
+						<!-- Setting up my images for my index page carousel -->
 						<li style="background-image: url('Images/20231208_124300.jpg');"></li>
 						<li style="background-image: url('Images/A_forest_1.jpg');"></li>
 						<li style="background-image: url('Images/IMG_0099.jpg');"></li>
@@ -72,6 +76,7 @@
 					</ul>
 				</div>
 				<div class="main-content">
+					<!-- This code below is for the vector image that runs through the page :) -->
 					<img class="vector" src="Images/vector.png" />
 					<div class="content-banner"></div>
 					<h1 class="main-content-header">Key EOTC Information</h1>
@@ -165,6 +170,7 @@
 						</div>
 					</div>
 					<div class="content-img-pos">
+						<!-- This code makes the faded icons at the bottom of each page appear -->
 						<img class="content-footer-img" id="cfi-1" src="Images/silver-fern.png" />
 					</div>
 				</div>
@@ -184,11 +190,16 @@
 					<h2 class="footer-header">Social Media</h2>
 					<div class="footer-break"></div>
 					<ul class="footer-list">
+						<!-- This code makes the logos appear in the footer -->
 						<li><i class="fab fa-facebook" onclick="openLink('https://www.facebook.com/TawaCollege/')"></i></li>
 						<li><i class="fab fa-instagram" onclick="openLink('https://www.instagram.com/tawacol/')"></i></li>
 						<li><i class="fab fa-youtube" onclick="openLink('https://www.youtube.com/@TCnewschannel/videos')"></i></li>
 					</ul>
 				</div>
+			</div>
+			<div class="back-to-top" id="back-to-top" onclick="topFunction()">
+				<div class="left"></div>
+				<div class="right"></div>
 			</div>
 		</div>
 	</body>
